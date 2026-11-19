@@ -1,0 +1,186 @@
+/**
+ * @name Custom Midnight Theme V2
+ * @author Slynx
+ * @version 2.0.0
+ * @description Highly customized discord theme, based on midnight.
+ */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+body {
+    --font: 'jetbrains mono';
+    --code-font: 'jetbrains mono';
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    --gap: 8px;
+    --divider-thickness: 1px;
+    --border-thickness: 1px;
+    --animations: on;
+    --list-item-transition: 0.08s linear;
+    --dms-icon-svg-transition: 0.2s steps(4);
+    --border-hover-transition: 0.08s linear;
+    --top-bar-height: 26px;
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
+    --custom-window-controls: on;
+    --window-control-size: 12px;
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='square'%3E%3Cpath d='M4 6l6 6-6 6M12 19h8'/%3E%3C/svg%3E");
+    --dms-icon-svg-size: 70%;
+    --dms-icon-color-before: var(--text-3);
+    --dms-icon-color-after: var(--accent-2);
+    --custom-dms-background: color;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: hsl(0, 0%, 3%);
+    --background-image: on;
+    --background-image-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080' preserveAspectRatio='xMidYMid slice'%3E%3Cdefs%3E%3Cpattern id='g' width='48' height='48' patternUnits='userSpaceOnUse'%3E%3Cpath d='M48 0H0V48' fill='none' stroke='%23fff' stroke-opacity='.035'/%3E%3C/pattern%3E%3Cpattern id='s' width='4' height='4' patternUnits='userSpaceOnUse'%3E%3Crect width='4' height='1' fill='%23000' fill-opacity='.4'/%3E%3C/pattern%3E%3CradialGradient id='r' cx='88%25' cy='105%25' r='60%25'%3E%3Cstop offset='0' stop-color='%23c3101f' stop-opacity='.3'/%3E%3Cstop offset='1' stop-color='%23c3101f' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='0%25' cy='0%25' r='55%25'%3E%3Cstop offset='0' stop-color='%231793d1' stop-opacity='.12'/%3E%3Cstop offset='1' stop-color='%231793d1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='v' cx='50%25' cy='50%25' r='75%25'%3E%3Cstop offset='.5' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='.85'/%3E%3C/radialGradient%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 .07 0 0 0 0'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='%23030303'/%3E%3Crect width='100%25' height='100%25' fill='url(%23g)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23r)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23v)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    --transparency-tweaks: on;
+    --remove-bg-layer: off;
+    --panel-blur: on;
+    --blur-amount: 2px;
+    --bg-floating: hsla(0, 0%, 3%, 0.94);
+    --custom-chatbar: separated;
+    --chatbar-height: 48px;
+    --small-user-panel: on;
+}
+:root {
+    --colors: on;
+    --arch: #1793d1;
+    --text-link: var(--arch);
+    --radius-xs: 0;
+    --radius-sm: 2px;
+    --radius-md: 2px;
+    --radius-lg: 3px;
+    --radius-xl: 4px;
+    --text-0: hsl(0, 0%, 94%);
+    --text-1: hsl(0, 0%, 88%);
+    --text-2: hsl(0, 0%, 78%);
+    --text-3: hsl(0, 0%, 60%);
+    --text-4: hsl(0, 0%, 44%);
+    --text-5: hsl(0, 0%, 30%);
+    --bg-1: hsla(0, 0%, 8%, 0.55);
+    --bg-2: hsla(0, 0%, 5%, 0.62);
+    --bg-3: hsla(0, 0%, 3%, 0.72);
+    --bg-4: hsla(0, 0%, 1%, 0.85);
+    --hover: hsla(0, 80%, 50%, 0.07);
+    --active: hsla(0, 80%, 50%, 0.13);
+    --active-2: hsla(0, 80%, 50%, 0.2);
+    --message-hover: hsla(0, 0%, 100%, 0.025);
+    --accent-1: oklch(78% 0.14 25);
+    --accent-2: oklch(64% 0.22 25);
+    --accent-3: oklch(56% 0.22 25);
+    --accent-4: oklch(48% 0.19 25);
+    --accent-5: oklch(40% 0.16 25);
+    --accent-new: var(--accent-2);
+    --mention: linear-gradient(to right, color-mix(in oklch, var(--accent-2), transparent 80%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in oklch, var(--accent-2), transparent 86%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in oklch, var(--arch), transparent 86%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in oklch, var(--arch), transparent 90%) 40%, transparent);
+    --online: oklch(78% 0.2 145);
+    --dnd: oklch(60% 0.22 25);
+    --idle: oklch(80% 0.15 80);
+    --streaming: oklch(55% 0.18 300);
+    --offline: var(--text-5);
+    --border-light: hsla(0, 0%, 100%, 0.05);
+    --border: hsla(0, 0%, 100%, 0.08);
+    --border-hover: oklch(64% 0.22 25 / 0.6);
+    --button-border: hsla(0, 0%, 100%, 0.1);
+    --red-1: oklch(78% 0.14 25);
+    --red-2: oklch(70% 0.19 25);
+    --red-3: oklch(64% 0.22 25);
+    --red-4: oklch(56% 0.22 25);
+    --red-5: oklch(48% 0.19 25);
+    --green-1: oklch(90% 0.14 145);
+    --green-2: oklch(84% 0.18 145);
+    --green-3: oklch(78% 0.2 145);
+    --green-4: oklch(68% 0.18 145);
+    --green-5: oklch(58% 0.15 145);
+    --blue-1: oklch(82% 0.09 235);
+    --blue-2: oklch(74% 0.12 235);
+    --blue-3: oklch(64% 0.14 235);
+    --blue-4: oklch(56% 0.13 235);
+    --blue-5: oklch(48% 0.12 235);
+    --yellow-1: oklch(92% 0.1 85);
+    --yellow-2: oklch(86% 0.13 85);
+    --yellow-3: oklch(80% 0.15 85);
+    --yellow-4: oklch(72% 0.14 85);
+    --yellow-5: oklch(64% 0.12 85);
+    --purple-1: oklch(84% 0.08 300);
+    --purple-2: oklch(74% 0.12 300);
+    --purple-3: oklch(64% 0.15 300);
+    --purple-4: oklch(56% 0.15 300);
+    --purple-5: oklch(48% 0.14 300);
+}
+::selection {
+    background: oklch(64% 0.22 25 / 0.45);
+    color: #fff;
+}
+[role="textbox"] {
+    caret-color: var(--accent-2);
+}
+::-webkit-scrollbar-thumb {
+    background: hsla(0, 0%, 100%, 0.1) !important;
+    border-radius: 0 !important;
+    border: 4px solid transparent !important;
+    background-clip: padding-box !important;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent-3) !important;
+}
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+:focus-visible:not([role="textbox"], input, textarea) {
+    outline: 1px solid var(--accent-2) !important;
+    outline-offset: 1px;
+}
+:is([role="textbox"], input, textarea):focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+:not(pre) > code {
+    color: var(--green-2) !important;
+    background: hsla(0, 0%, 0%, 0.6) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 0 !important;
+}
+pre {
+    border-radius: 0 !important;
+    border: 1px solid var(--border) !important;
+    border-left: 2px solid var(--accent-2) !important;
+}
+[class^="menu_"] {
+    border-radius: 2px !important;
+    border: 1px solid var(--border) !important;
+}
+button:is([aria-label="Disconnect"], [aria-label="Disconnect from call"], [aria-label="Leave Call"], [aria-label="End Call"], [aria-label="End call"]) {
+    background: oklch(48% 0.19 25) !important;
+    border: 1px solid oklch(64% 0.22 25) !important;
+    border-radius: 2px !important;
+    color: #fff !important;
+    box-shadow: 0 0 12px oklch(56% 0.22 25 / 0.35) !important;
+    transition: box-shadow 0.1s linear, background 0.1s linear !important;
+    &:hover {
+        background: oklch(56% 0.22 25) !important;
+        box-shadow: 0 0 20px oklch(64% 0.22 25 / 0.55) !important;
+    }
+    &:active {
+        background: oklch(42% 0.17 25) !important;
+    }
+    & svg {
+        color: #fff !important;
+        fill: #fff !important;
+        stroke: #fff !important;
+    }
+}
+:is([class*="callContainer"], [class*="callBackground"], [class*="videoBackground"], [class*="CallContainer"], [class*="VideoBackground"], [class*="callScreen"], [class*="voiceCall"], [class*="videoCall"]) {
+    background: hsla(0, 0%, 0%, 0.5) !important;
+    border: var(--border-thickness) solid var(--border) !important;
+    box-shadow: none !important;
+    border-radius: 2px;
+}
+:is([class*="callContainer"], [class*="callBackground"], [class*="videoBackground"]) > * {
+    background: hsla(0, 0%, 0%, 0.3) !important;
+    border: var(--border-thickness) solid var(--border-light) !important;
+    box-shadow: none !important;
+}

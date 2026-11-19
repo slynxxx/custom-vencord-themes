@@ -1,0 +1,167 @@
+/**
+ * @name Custom Midnight Theme
+ * @author Slynx
+ * @version 1.0.0
+ * @description Highly customized discord theme, based on midnight.
+ */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+body {
+    --font: 'figtree';
+    --code-font: '';
+    font-weight: 400;
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 1px;
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+    --border-hover-transition: 0.2s ease;
+    --top-bar-height: 28px;
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
+    --custom-window-controls: on;
+    --window-control-size: 16px;
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M18.8943 4.34399C17.5183 3.71467 16.057 3.256 14.5317 3C14.3396 3.33067 14.1263 3.77866 13.977 4.13067C12.3546 3.89599 10.7439 3.89599 9.14391 4.13067C8.99457 3.77866 8.77056 3.33067 8.58922 3C7.05325 3.256 5.59191 3.71467 4.22552 4.34399C1.46286 8.41865 0.716188 12.3973 1.08952 16.3226C2.92418 17.6559 4.69486 18.4666 6.4346 19C6.86126 18.424 7.24527 17.8053 7.57594 17.1546C6.9466 16.92 6.34927 16.632 5.77327 16.2906C5.9226 16.184 6.07194 16.0667 6.21061 15.9493C9.68793 17.5387 13.4543 17.5387 16.889 15.9493C17.0383 16.0667 17.177 16.184 17.3263 16.2906C16.7503 16.632 16.153 16.92 15.5236 17.1546C15.8543 17.8053 16.2383 18.424 16.665 19C18.4036 18.4666 20.185 17.6559 22.01 16.3226C22.4687 11.7787 21.2836 7.83202 18.8943 4.34399ZM8.05593 13.9013C7.01058 13.9013 6.15725 12.952 6.15725 11.7893C6.15725 10.6267 6.98925 9.67731 8.05593 9.67731C9.11191 9.67731 9.97588 10.6267 9.95454 11.7893C9.95454 12.952 9.11191 13.9013 8.05593 13.9013ZM15.065 13.9013C14.0196 13.9013 13.1652 12.952 13.1652 11.7893C13.1652 10.6267 13.9983 9.67731 15.065 9.67731C16.121 9.67731 16.985 10.6267 16.9636 11.7893C16.9636 12.952 16.1317 13.9013 15.065 13.9013Z' stroke='white' stroke-linejoin='round'/%3E%3C/svg%3E");
+    --dms-icon-svg-size: 110%;
+    --dms-icon-color-before: var(--text-0);
+    --dms-icon-color-after: var(--text-0);
+    --custom-dms-background: off;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, hsl(0, 0%, 15%), hsl(0, 0%, 8%), hsl(0, 0%, 90%));
+    --background-image: on;
+    --background-image-url: url('https://i.imgur.com/4gZ8XQQ.png');
+    --transparency-tweaks: on;
+    --remove-bg-layer: off;
+    --panel-blur: on;
+    --blur-amount: 1px;
+    --bg-floating: hsla(222, 15%, 13%, 0.918);
+    --custom-chatbar: separated;
+    --chatbar-height: 56px;
+    --small-user-panel: on;
+}
+:root {
+    --colors: on;
+    --text-0: hsl(0, 0%, 100%);
+    --text-1: hsl(0, 0%, 96%);
+    --text-2: hsl(0, 0%, 88%);
+    --text-3: hsl(0, 0%, 74%);
+    --text-4: hsl(0, 0%, 58%);
+    --text-5: hsl(0, 0%, 42%);
+    --bg-1: hsla(0, 0%, 15%, 0.45);
+    --bg-2: hsla(0, 0%, 10%, 0.52);
+    --bg-3: hsla(0, 0%, 7%, 0.62);
+    --bg-4: hsla(0, 0%, 0%, 0.78);
+    --hover: hsla(0, 0%, 100%, 0.08);
+    --active: hsla(0, 0%, 100%, 0.14);
+    --active-2: hsla(0, 0%, 100%, 0.2);
+    --message-hover: hsla(0, 0%, 100%, 0.04);
+    --accent-1: hsl(0, 0%, 88%);
+    --accent-2: hsl(0, 0%, 74%);
+    --accent-3: hsl(0, 0%, 62%);
+    --accent-4: hsl(0, 0%, 52%);
+    --accent-5: hsl(0, 0%, 42%);
+    --accent-new: var(--accent-2);
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 84%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 82%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 88%) 40%, transparent);
+    --online: #43b581;
+    --dnd: #f04747;
+    --idle: #faa61a;
+    --streaming: #593695;
+    --offline: var(--text-4);
+    --border-light: hsla(0, 0%, 100%, 0.08);
+    --border: hsla(0, 0%, 100%, 0.12);
+    --border-hover: hsla(0, 0%, 100%, 0.18);
+    --button-border: hsla(0, 0%, 100%, 0.18);
+    --red-1: oklch(92% 0.18 18);
+    --red-2: oklch(84% 0.24 18);
+    --red-3: oklch(74% 0.30 18);
+    --red-4: oklch(64% 0.38 18);
+    --red-5: oklch(54% 0.46 18);
+    --green-1: oklch(96% 0.02 150);
+    --green-2: oklch(90% 0.02 150);
+    --green-3: oklch(84% 0.02 150);
+    --green-4: oklch(78% 0.02 150);
+    --green-5: oklch(72% 0.02 150);
+    --blue-1: oklch(96% 0.02 210);
+    --blue-2: oklch(90% 0.02 210);
+    --blue-3: oklch(84% 0.02 210);
+    --blue-4: oklch(78% 0.02 210);
+    --blue-5: oklch(72% 0.02 210);
+    --yellow-1: oklch(96% 0.02 90);
+    --yellow-2: oklch(90% 0.02 90);
+    --yellow-3: oklch(84% 0.02 90);
+    --yellow-4: oklch(78% 0.02 90);
+    --yellow-5: oklch(72% 0.02 90);
+    --purple-1: oklch(96% 0.02 300);
+    --purple-2: oklch(90% 0.02 300);
+    --purple-3: oklch(84% 0.02 300);
+    --purple-4: oklch(78% 0.02 300);
+    --purple-5: oklch(72% 0.02 300);
+}
+button[aria-label="Disconnect"],
+button[aria-label="Disconnect from call"],
+button[aria-label="Leave Call"],
+button[aria-label="End Call"],
+button[aria-label="End call"] {
+    background: linear-gradient(180deg, rgba(255, 117, 117, 0.96), rgba(224, 66, 66, 0.96)) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-radius: 12px !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
+    box-shadow: 0 8px 16px rgba(224, 66, 66, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.22) !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease !important;
+}
+button[aria-label="Disconnect"]:hover,
+button[aria-label="Disconnect from call"]:hover,
+button[aria-label="Leave Call"]:hover,
+button[aria-label="End Call"]:hover,
+button[aria-label="End call"]:hover {
+    transform: translateY(-1px) !important;
+    filter: brightness(1.04) !important;
+    box-shadow: 0 10px 18px rgba(224, 66, 66, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.26) !important;
+}
+button[aria-label="Disconnect"]:active,
+button[aria-label="Disconnect from call"]:active,
+button[aria-label="Leave Call"]:active,
+button[aria-label="End Call"]:active,
+button[aria-label="End call"]:active {
+    transform: translateY(0) !important;
+    filter: brightness(0.98) !important;
+}
+button[aria-label="Disconnect"] svg,
+button[aria-label="Disconnect from call"] svg,
+button[aria-label="Leave Call"] svg,
+button[aria-label="End Call"] svg,
+button[aria-label="End call"] svg {
+    color: #ffe2e2 !important;
+    fill: #ffe2e2 !important;
+    stroke: #ffe2e2 !important;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.15)) !important;
+}
+[class*="callContainer"],
+[class*="callBackground"],
+[class*="videoBackground"],
+[class*="CallContainer"],
+[class*="VideoBackground"],
+[class*="callScreen"],
+[class*="voiceCall"],
+[class*="videoCall"] {
+    background: hsla(0, 0%, 0%, 0.28) !important;
+    background-color: hsla(0, 0%, 0%, 0.28) !important;
+    border: var(--border-thickness) solid hsla(0, 0%, 65%, 0.28) !important;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 75%, 0.12) !important;
+}
+[class*="callContainer"] > *,
+[class*="callBackground"] > *,
+[class*="videoBackground"] > * {
+    background: hsla(0, 0%, 0%, 0.18) !important;
+    background-color: hsla(0, 0%, 0%, 0.18) !important;
+    border: var(--border-thickness) solid hsla(0, 0%, 65%, 0.22) !important;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 75%, 0.1) !important;
+}
